@@ -18,6 +18,7 @@ dependencies {
     runtimeOnly 'com.h2database:h2' // 인메모리 데이터베이스
     compileOnly 'org.projectlombok:lombok'  // 롬복
     annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'     // 타임리프
     testImplementation 'org.springframework.boot:spring-boot-starter-test'      // 스프링 애플리케이션을 테스트하기 위해 필요한 의존성 모음
 }
 
