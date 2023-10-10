@@ -43,7 +43,7 @@ public class WebSecurityConfig {
                     .logoutSuccessUrl("/login") // 로그아웃 완료 후 이동할 경로 설정
                     .invalidateHttpSession(true)    // 로그아웃 이후에 세션을 전체 삭제할지 여부 설정
                 .and()
-                .csrf().disable()   // csrf 비활성화
+                .csrf().disable()   // csrf 비활성화9
                 .build();
     }
 
