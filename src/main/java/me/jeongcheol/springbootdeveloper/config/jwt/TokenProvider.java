@@ -72,7 +72,7 @@ public class TokenProvider {
     private Claims getClaims(String token) {
         return Jwts.parser()    // 클레임 조회
                 .setSigningKey(jwtProperties.getSecretKey())
-                .parseClaimsJwt(token)
+                .parseClaimsJws(token)
                 .getBody();
     }
 }
